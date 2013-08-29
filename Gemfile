@@ -41,5 +41,11 @@ gem 'padrino', '0.11.3'
 #   gem 'padrino-' + g, '0.11.3'
 # end
 
+# To fix Heroku, based on this suggestion: http://stackoverflow.com/questions/15550624/an-error-occurred-while-installing-sqlite3-1-3-7-and-bundler-cannot-continue
+
+group :development, :test do 
+  gem 'dm-sqlite-adapter'
+end
+
 # Heroku
 gem 'dm-postgres-adapter', :group => :production
