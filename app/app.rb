@@ -7,8 +7,8 @@ module VideoballV4Padrino
 
     enable :sessions
 
-    get "/" do
-      "Hello world!"
+    get :index do
+       render 'index'
     end
 
     ###Padrino defaults, started out commented.
