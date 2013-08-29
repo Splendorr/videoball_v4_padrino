@@ -6,8 +6,9 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 # Server requirements
-gem 'thin' # or mongrel
+# gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
+gem 'unicorn'
 
 # Optional JSON codec (faster performance)
 # gem 'oj'
@@ -26,6 +27,8 @@ gem 'dm-constraints'
 gem 'dm-aggregates'
 gem 'dm-types'
 gem 'dm-core'
+
+gem 'foreman'
 
 # Test requirements
 gem 'mocha', :group => 'test'
@@ -49,5 +52,8 @@ group :development, :test do
   gem 'dm-sqlite-adapter'
 end
 
-# Heroku
-gem 'dm-postgres-adapter', :group => :production
+group :production do
+  gem 'pg'
+  gem 'do_postgres'
+  gem 'dm-postgres-adapter'
+end
