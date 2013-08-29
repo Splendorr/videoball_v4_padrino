@@ -1,0 +1,183 @@
+// Color Palettes
+
+// Colorset-1
+
+  $colorset-1-player1: #E72D01;
+  $colorset-1-player1-int: #D85B3D;
+  $colorset-1-player2: #4280A0;
+  $colorset-1-player2-int: #6c92a3;
+  $colorset-1-player3: #F34300;
+  $colorset-1-player4: #376C86;
+  $colorset-1-ball: #ff7200;
+  $colorset-1-dark-stripe: #CBAE87;
+  $colorset-1-light-stripe: #C9B08C; 
+  $colorset-1-court-marks: #D9C2A5;
+  $colorset-1-sideline: #D86E0F;
+  $colorset-1-sideline-center: #DE7110;
+  $colorset-1-sideline-mid: #CD690F;
+  $colorset-1-sideline-shadow: #BA5F0D;
+  $colorset-1-footer-center: #DF7414;
+  $colorset-1-footer-mid: #CA670E;
+  $colorset-1-footer-shadow: #BC600D;
+  $colorset-1-game-white: #EFEFEF;
+  $colorset-1-game-black: #000000; 
+
+  .colorset-1-topstripe {
+    @include linear-gradient(90deg, $colorset-1-sideline-shadow 0%, $colorset-1-sideline-mid 17%, $colorset-1-sideline-center 50%, $colorset-1-sideline-mid 83%, $colorset-1-sideline-shadow 100%, $fallback: $colorset-1-sideline);
+  }
+
+  .colorset-1-toplink {
+    color: $colorset-1-light-stripe; 
+    a { 
+      padding: 3px 9px 3px 9px; // top, right, bottom, left
+      color: $colorset-1-light-stripe; 
+      &:link { color: $colorset-1-light-stripe; } &:hover { color: $colorset-1-light-stripe; background-color: $colorset-1-player2; } &:visited { color: $colorset-1-light-stripe; } &:active { color: $colorset-1-light-stripe; } } // End a
+  }
+
+  .colorset-1-footerstripe {
+    @include linear-gradient(
+      90deg, 
+      $colorset-1-footer-shadow 0%, 
+      $colorset-1-footer-mid 17%, 
+      $colorset-1-footer-center 50%, 
+      $colorset-1-footer-mid 83%, 
+      $colorset-1-footer-shadow 100%, 
+      $fallback: $colorset-1-sideline);
+  }
+
+  .colorset-1-player1 {
+    color: $colorset-1-player1; 
+    a {color: $colorset-1-player1; &:link { color: $colorset-1-player1; } &:hover { color: $colorset-1-player1; } &:visited { color: $colorset-1-player1; } &:active { color: $colorset-1-player1; } } // End a
+  }
+  .colorset-1-player1-bg {background-color: $colorset-1-player1; }
+
+  .colorset-1-player2 {
+    color: $colorset-1-player2; 
+    a {color: $colorset-1-player2; &:link { color: $colorset-1-player2; } &:hover { color: $colorset-1-player2; } &:visited { color: $colorset-1-player2; } &:active { color: $colorset-1-player2; } } // End a
+  }
+  .colorset-1-player2-bg {background-color: $colorset-1-player2; }
+
+  .colorset-1-player3 {
+    color: $colorset-1-player3; 
+    a {color: $colorset-1-player3; &:link { color: $colorset-1-player3; } &:hover { color: $colorset-1-player3; } &:visited { color: $colorset-1-player3; } &:active { color: $colorset-1-player3; } } // End a
+  }
+  .colorset-1-player3-bg {background-color: $colorset-1-player3; }
+
+  .colorset-1-player4 {
+    color: $colorset-1-player4; 
+    a {color: $colorset-1-player4; &:link { color: $colorset-1-player4; } &:hover { color: $colorset-1-player4; } &:visited { color: $colorset-1-player4; } &:active { color: $colorset-1-player4; } } // End a
+  }
+  .colorset-1-player4-bg {background-color: $colorset-1-player4; }
+
+  .colorset-1-dark-stripe {
+    color: $colorset-1-dark-stripe; 
+    a {color: $colorset-1-dark-stripe; &:link { color: $colorset-1-dark-stripe; } &:hover { color: $colorset-1-dark-stripe; } &:visited { color: $colorset-1-dark-stripe; } &:active { color: $colorset-1-dark-stripe; } } // End a
+  }
+  .colorset-1-dark-stripe-bg {background-color: $colorset-1-dark-stripe; }
+
+  .colorset-1-light-stripe {
+    color: $colorset-1-light-stripe; 
+    a {color: $colorset-1-light-stripe; &:link { color: $colorset-1-light-stripe; } &:hover { color: $colorset-1-light-stripe; } &:visited { color: $colorset-1-light-stripe; } &:active { color: $colorset-1-light-stripe; } } // End a
+  }
+  .colorset-1-light-stripe-bg {background-color: $colorset-1-light-stripe; }
+
+  .colorset-1-court-marks {
+    color: $colorset-1-court-marks; 
+    a {color: $colorset-1-court-marks; &:link { color: $colorset-1-court-marks; } &:hover { color: $colorset-1-court-marks; } &:visited { color: $colorset-1-court-marks; } &:active { color: $colorset-1-court-marks; } } // End a
+  }
+  .colorset-1-court-marks-bg {background-color: $colorset-1-court-marks; }
+
+  .colorset-1-sideline {
+    color: $colorset-1-sideline; 
+    a {color: $colorset-1-sideline; &:link { color: $colorset-1-sideline; } &:hover { color: $colorset-1-sideline; } &:visited { color: $colorset-1-sideline; } &:active { color: $colorset-1-sideline; } } // End a
+  }
+  .colorset-1-sideline-bg {background-color: $colorset-1-sideline; }
+
+  .colorset-1-game-white {
+    color: $colorset-1-game-white; 
+    a {color: $colorset-1-game-white; &:link { color: $colorset-1-game-white; } &:hover { color: $colorset-1-game-white; } &:visited { color: $colorset-1-game-white; } &:active { color: $colorset-1-game-white; } } // End a
+  }
+  .colorset-1-game-white-bg {background-color: $colorset-1-game-white; }
+
+  .colorset-1-game-black {
+    color: $colorset-1-game-black; 
+    a {color: $colorset-1-game-black; &:link { color: $colorset-1-game-black; } &:hover { color: $colorset-1-game-black; } &:visited { color: $colorset-1-game-black; } &:active { color: $colorset-1-game-black; } } // End a
+  } 
+  .colorset-1-game-black-bg {background-color: $colorset-1-game-black; } 
+
+// End Colorset-1
+
+// Colorset-2
+
+  $colorset-2-player1: #000000;
+  $colorset-2-player2: #1D9663;
+  $colorset-2-player3: #000000;
+  $colorset-2-player4: #009374;
+  $colorset-2-dark-stripe: #BDBDBD;
+  $colorset-2-light-stripe: #C1C1C1; 
+  $colorset-2-court-marks: #CFCFCF;
+  $colorset-2-sideline: #007649;
+  $colorset-2-game-white: #F0F0F0;
+  $colorset-2-game-black: #000000; 
+
+  .colorset-2-player1 {
+    color: $colorset-2-player1; 
+    a {color: $colorset-2-player1; &:link { color: $colorset-2-player1; } &:hover { color: $colorset-2-player1; } &:visited { color: $colorset-2-player1; } &:active { color: $colorset-2-player1; } } // End a
+  }
+  .colorset-2-player1-bg {background-color: $colorset-2-player1; }
+
+  .colorset-2-player2 {
+    color: $colorset-2-player2; 
+    a {color: $colorset-2-player2; &:link { color: $colorset-2-player2; } &:hover { color: $colorset-2-player2; } &:visited { color: $colorset-2-player2; } &:active { color: $colorset-2-player2; } } // End a
+  }
+  .colorset-2-player2-bg {background-color: $colorset-2-player2; }
+
+  .colorset-2-player3 {
+    color: $colorset-2-player3; 
+    a {color: $colorset-2-player3; &:link { color: $colorset-2-player3; } &:hover { color: $colorset-2-player3; } &:visited { color: $colorset-2-player3; } &:active { color: $colorset-2-player3; } } // End a
+  }
+  .colorset-2-player3-bg {background-color: $colorset-2-player3; }
+
+  .colorset-2-player4 {
+    color: $colorset-2-player4; 
+    a {color: $colorset-2-player4; &:link { color: $colorset-2-player4; } &:hover { color: $colorset-2-player4; } &:visited { color: $colorset-2-player4; } &:active { color: $colorset-2-player4; } } // End a
+  }
+  .colorset-2-player4-bg {background-color: $colorset-2-player4; }
+
+  .colorset-2-dark-stripe {
+    color: $colorset-2-dark-stripe; 
+    a {color: $colorset-2-dark-stripe; &:link { color: $colorset-2-dark-stripe; } &:hover { color: $colorset-2-dark-stripe; } &:visited { color: $colorset-2-dark-stripe; } &:active { color: $colorset-2-dark-stripe; } } // End a
+  }
+  .colorset-2-dark-stripe-bg {background-color: $colorset-2-dark-stripe; }
+
+  .colorset-2-light-stripe {
+    color: $colorset-2-light-stripe; 
+    a {color: $colorset-2-light-stripe; &:link { color: $colorset-2-light-stripe; } &:hover { color: $colorset-2-light-stripe; } &:visited { color: $colorset-2-light-stripe; } &:active { color: $colorset-2-light-stripe; } } // End a
+  }
+  .colorset-2-light-stripe-bg {background-color: $colorset-2-light-stripe; }
+
+  .colorset-2-court-marks {
+    color: $colorset-2-court-marks; 
+    a {color: $colorset-2-court-marks; &:link { color: $colorset-2-court-marks; } &:hover { color: $colorset-2-court-marks; } &:visited { color: $colorset-2-court-marks; } &:active { color: $colorset-2-court-marks; } } // End a
+  }
+  .colorset-2-court-marks-bg {background-color: $colorset-2-court-marks; }
+
+  .colorset-2-sideline {
+    color: $colorset-2-sideline; 
+    a {color: $colorset-2-sideline; &:link { color: $colorset-2-sideline; } &:hover { color: $colorset-2-sideline; } &:visited { color: $colorset-2-sideline; } &:active { color: $colorset-2-sideline; } } // End a
+  }
+  .colorset-2-sideline-bg {background-color: $colorset-2-sideline; }
+
+  .colorset-2-game-white {
+    color: $colorset-2-game-white; 
+    a {color: $colorset-2-game-white; &:link { color: $colorset-2-game-white; } &:hover { color: $colorset-2-game-white; } &:visited { color: $colorset-2-game-white; } &:active { color: $colorset-2-game-white; } } // End a
+  }
+  .colorset-2-game-white-bg {background-color: $colorset-2-game-white; }
+
+  .colorset-2-game-black {
+    color: $colorset-2-game-black; 
+    a {color: $colorset-2-game-black; &:link { color: $colorset-2-game-black; } &:hover { color: $colorset-2-game-black; } &:visited { color: $colorset-2-game-black; } &:active { color: $colorset-2-game-black; } } // End a
+  } 
+  .colorset-2-game-black-bg {background-color: $colorset-2-game-black; } 
+
+// End Colorset-2

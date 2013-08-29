@@ -1,0 +1,115 @@
+/*
+Syntax error: Undefined mixin 'linear-gradient'.
+        on line 26 of /Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/_colors.scss, in `linear-gradient'
+        from line 26 of /Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/_colors.scss
+        from line 2 of /Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/style.scss
+
+21: @include font-face(SteelfishRgBoldItalic, '/fonts/steelfish_bolditalic/steelfish_bd_it-webfont');
+22: @include font-face(SteelfishOutlineRegular, '/fonts/steelfish_outline/steelfish_outline-webfont');
+23: 
+24: // $tangerine: rgba(207,141,85,1);
+25: $goldlink: rgba(255,226,70,1);
+26: 
+27: /* We use this media query to add styles to any device that supports media queries *\/
+28: @media #{$screen} {
+29: 
+30:   // .tangerine-bg {
+31:   //   background-color: $tangerine;
+
+Backtrace:
+/Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/_colors.scss:26:in `linear-gradient'
+/Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/_colors.scss:26
+/Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/style.scss:2
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:227:in `map'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/rack.rb:51:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/xss_header.rb:18:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/path_traversal.rb:16:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/json_csrf.rb:18:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/base.rb:49:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-protection-1.5.0/lib/rack/protection/frame_options.rb:31:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/padrino-core-0.11.3/lib/padrino-core/reloader.rb:337:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/padrino-core-0.11.3/lib/padrino-core/logger.rb:400:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sinatra-1.4.3/lib/sinatra/showexceptions.rb:21:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sinatra-1.4.3/lib/sinatra/base.rb:1949:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `block in call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sinatra-1.4.3/lib/sinatra/base.rb:1726:in `synchronize'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sinatra-1.4.3/lib/sinatra/base.rb:1449:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/padrino-core-0.11.3/lib/padrino-core/router.rb:83:in `block in call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/padrino-core-0.11.3/lib/padrino-core/router.rb:76:in `each'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/padrino-core-0.11.3/lib/padrino-core/router.rb:76:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/sinatra-1.4.3/lib/sinatra/base.rb:212:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/shotgun-0.9/lib/shotgun/loader.rb:86:in `proceed_as_child'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/shotgun-0.9/lib/shotgun/loader.rb:31:in `call!'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/shotgun-0.9/lib/shotgun/loader.rb:18:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/shotgun-0.9/lib/shotgun/favicon.rb:12:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/shotgun-0.9/lib/shotgun/static.rb:14:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/builder.rb:138:in `call'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/thin-1.5.1/lib/thin/connection.rb:81:in `block in pre_process'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/thin-1.5.1/lib/thin/connection.rb:79:in `catch'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/thin-1.5.1/lib/thin/connection.rb:79:in `pre_process'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/thin-1.5.1/lib/thin/connection.rb:54:in `process'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/thin-1.5.1/lib/thin/connection.rb:39:in `receive_data'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/eventmachine-1.0.3/lib/eventmachine.rb:187:in `run_machine'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/eventmachine-1.0.3/lib/eventmachine.rb:187:in `run'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/thin-1.5.1/lib/thin/backends/base.rb:63:in `start'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/thin-1.5.1/lib/thin/server.rb:159:in `start'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/handler/thin.rb:16:in `run'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/gems/shotgun-0.9/bin/shotgun:156:in `<top (required)>'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/bin/shotgun:23:in `load'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/bin/shotgun:23:in `<main>'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/simolinic/.rvm/gems/ruby-2.0.0-p247/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'linear-gradient'.\A         on line 26 of /Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/_colors.scss, in `linear-gradient'\A         from line 26 of /Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/_colors.scss\A         from line 2 of /Users/simolinic/Dropbox/Public/videoball_v4_padrino/app/stylesheets/style.scss\A \A 21: @include font-face(SteelfishRgBoldItalic, '/fonts/steelfish_bolditalic/steelfish_bd_it-webfont');\A 22: @include font-face(SteelfishOutlineRegular, '/fonts/steelfish_outline/steelfish_outline-webfont');\A 23: \A 24: // $tangerine: rgba(207,141,85,1);\A 25: $goldlink: rgba(255,226,70,1);\A 26: \A 27: /* We use this media query to add styles to any device that supports media queries */\A 28: @media #{$screen} {\A 29: \A 30:   // .tangerine-bg {\A 31:   //   background-color: $tangerine;"; }

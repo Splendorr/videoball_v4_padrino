@@ -1,0 +1,385 @@
+@import "foundation";
+@import "_colors";
+@import "_transforms";
+
+/* Available Variables */
+$small-screen: emCalc(768px);
+$medium-screen: emCalc(1280px);
+$large-screen: emCalc(1440px);
+
+$screen: "only screen";
+$small: "only screen and (min-width:"#{$small-screen}")";
+$medium: "only screen and (min-width:"#{$medium-screen}")";
+$large: "only screen and (min-width:"#{$large-screen}")";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+/* Font Includes */
+@include font-face(SteelfishRgRegular, 
+  '/fonts/steelfish_regular/steelfish_rg-webfont');
+@include font-face(SteelfishRgItalic, '/fonts/steelfish_italic/steelfish_rg_it-webfont');
+@include font-face(SteelfishRgBoldItalic, '/fonts/steelfish_bolditalic/steelfish_bd_it-webfont');
+@include font-face(SteelfishOutlineRegular, '/fonts/steelfish_outline/steelfish_outline-webfont');
+
+// $tangerine: rgba(207,141,85,1);
+$goldlink: rgba(255,226,70,1);
+
+/* We use this media query to add styles to any device that supports media queries */
+@media #{$screen} {
+
+  // .tangerine-bg {
+  //   background-color: $tangerine;
+  // }
+
+  // header {
+  //   text-align: center;
+  // }
+
+  p {
+    // font-family: 'SteelfishRgRegular', sans-serif;
+    // font-size: 2em;
+  }
+
+  body {
+    // overflow: hidden;
+    // overflow-x: hidden;
+  }
+
+  #color-btn {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .sideline-nav {
+    font-family: 'SteelfishRgItalic', sans-serif;
+    text-align: center;
+    width: 100%;
+
+    ul {
+      // width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+
+    li {
+      font-size: 2em;
+      padding: 0px;
+    }
+  }
+
+  $logo-box-shadow-color: $colorset-1-light-stripe;
+  .videoball-logo-container-stripe {
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    z-index: 1;
+    background-color: $colorset-1-game-white;
+    // border-top: solid 1em $colorset-1-ball;
+    // border-bottom: solid 1em $colorset-1-ball;
+    box-shadow:
+      inset 0em 0em $logo-box-shadow-color,
+      inset 0em 0em $logo-box-shadow-color,
+      inset 0em 3.5em $logo-box-shadow-color,
+      inset 0em -4em $logo-box-shadow-color
+    ;
+
+    @media only screen and (min-width: emCalc(400px)) {
+      box-shadow:
+        inset 0em 0em $logo-box-shadow-color,
+        inset 0em 0em $logo-box-shadow-color,
+        inset 0em 4.5em $logo-box-shadow-color,
+        inset 0em -5em $logo-box-shadow-color
+      ;
+    }
+
+    @media #{$small} {
+      box-shadow:
+      inset 0em 0em $logo-box-shadow-color,
+      inset 0em 0em $logo-box-shadow-color,
+      inset 0em 5em $logo-box-shadow-color,
+      inset 0em -5.5em $logo-box-shadow-color
+    ;
+    }
+
+    @media only screen and (min-width: emCalc(1080px)) {
+      box-shadow:
+        inset 0em 0em $logo-box-shadow-color,
+        inset 0em 0em $logo-box-shadow-color,
+        inset 0em 6em $logo-box-shadow-color,
+        inset 0em -6.5em $logo-box-shadow-color
+      ;
+    }
+
+  }
+
+  .videoball-container-stripe {
+    // background-color: $redpeach;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    overflow: hidden;
+  }
+  .videoball-title {
+    position: relative;
+    font-family: 'SteelfishRgItalic', sans-serif;
+    // font-size: 12em;
+    text-align: center;
+    color: $colorset-1-game-white;
+    z-index: 2;
+  }
+
+  .slide-in {
+    display: none;
+    left: 1000px;
+
+    @media #{$small} {
+      left: 2000px;
+    }
+  } // End .slide-in
+
+  .advertisements {
+
+    // border: solid 2px $colorset-1-game-white;
+    
+    h1, h2, h3 {
+      font-family: 'SteelfishRgItalic', sans-serif;
+    }
+
+  }
+
+  $advert-padding: 8px 0px 12px 4px; // top, right, bottom, left
+
+  // .adheader {
+  //   font-family: 'SteelfishRgItalic', sans-serif;
+  //   font-size: 2em;
+  //   background-color: $colorset-1-player2;
+  //   color: $colorset-1-game-white;
+  //   // width: 100%;
+  //   text-align: left;
+
+  //   span { 
+  //     background-color: $colorset-1-player2;
+  //     padding: $advert-padding;
+  //   }
+
+  //   border-right: solid 5000px $colorset-1-player2;
+  //   margin-right: -5000px;
+  //   padding: $advert-padding;
+  //   // padding-left: 500px;
+  //   // width: auto;
+  //   // margin-right: auto;
+  //   // padding: 7px;
+  //   // padding-right: 0;
+
+  //   overflow: hidden;
+  // }
+
+  .advertisements {
+    // border: solid 8px $colorset-1-court-marks;
+    background-color: $colorset-1-court-marks;
+    text-align: center;
+  }
+
+  .adheader {
+    @include inline-block; // Bourbon mixin for IE
+    font-family: 'SteelfishRgItalic', sans-serif;
+    font-size: 2em;
+    color: $colorset-1-game-white;
+    background-color: $colorset-1-player2-int;
+    text-align: center;
+    width: 100%;
+    // padding-right: 5000px;
+    // margin-right: -5000px;
+    // margin-right: -100px;
+    // border-right: solid 100px $colorset-1-player2;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    // padding-left: 4px;
+    // direction: rtl;
+  }
+
+  $section-title-padding: 7px 14px 7px 0px; // top, right, bottom, left
+
+  .section-title {
+    @include inline-block; // Bourbon mixin for IE
+    font-family: 'SteelfishRgItalic', sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    color: $colorset-1-game-white;
+    background-color: $colorset-1-player1;
+    text-align: left;
+    padding-left: 5000px;
+    margin-left: -5000px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 14px;
+    overflow: hidden;
+
+    // padding: $section-title-padding;
+  }
+
+  $article-header-padding: 7px 14px 7px 0px; // top, right, bottom, left
+
+  .article-header {
+    @include inline-block; // Bourbon mixin for IE
+    font-family: 'SteelfishRgItalic', sans-serif;
+    color: $colorset-1-game-white;
+    background-color: $colorset-1-player1-int;
+    text-align: left;
+    padding-left: 5000px;
+    margin-left: -5000px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 14px;
+    overflow: hidden;
+
+    .article-title {
+      font-size: 3em;
+    }
+
+    .article-date {
+      font-size: 2em;
+      margin-top: 0.1em;
+    }
+  }
+
+  .article-body {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    p:first-child {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    .float-ball {
+      float: left;
+      @include grid-column(3);
+    }
+  }
+
+  .section-divider {
+    padding-left: 5000px;
+    margin-left: -5000px;
+    border-bottom: 1.5em double $colorset-1-player2;
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  .emtop-margin {
+    margin-top: 1em;
+  }
+
+  .embottom-margin {
+    margin-bottom: 1em;
+  }  
+
+  .emtop-padding {
+    padding-top: 1em;
+  }
+
+  .embottom-padding {
+    padding-bottom: 1em;
+  }
+
+  .halfemtop-margin {
+    margin-top: 0.5em;
+  }
+
+  .halfembottom-margin {
+    margin-bottom: 0.5em;
+  }  
+
+  .halfemtop-padding {
+    padding-top: 0.5em;
+  }
+
+  .halfembottom-padding {
+    padding-bottom: 0.5em;
+  }
+
+  .title-black-shadow {
+    text-shadow: 3px 3px rgba(0,0,0,0.7);
+  }
+
+  .justascootch {
+    margin-top: 5px;
+  }
+
+  .copyrightsteelfish {
+    font-size: 1.5em;
+    color: white;
+    // color: #000;
+  }
+}
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media #{$small} { 
+
+  .sideline-nav2 {
+    text-align: center;
+  }
+  .sideline-nav {
+
+    header {
+      // text-align: center;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    ul {
+      // @include inline-list;
+      // position: relative;
+      margin: auto;
+      text-align: center;
+    }
+
+    li {
+    }
+  }
+
+}
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media #{$medium} { }
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media #{$large} { }
+
+/* Apply styles to screens in landscape orientation */
+@media #{$landscape} { }
+
+/* Apply styles to screens in portrait orientation */
+@media #{$portrait} { }
+
+/* We also use Modernizr to add a .touch class to the body when applicable */
+/* You can prepend this class to anything and it will style only for touch devices */
+.touch .your-element { }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+  /* Styles for mobile */
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  /* Styles for tablet */
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  /* Don't forget your Retina CSS! */
+  
+}
