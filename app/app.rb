@@ -7,6 +7,11 @@ module VideoballV4Padrino
 
     enable :sessions
 
+    get "/" do
+      "Hello world!"
+    end
+
+    ###Padrino defaults, started out commented.
     ##
     # Caching support
     #
