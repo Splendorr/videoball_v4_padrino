@@ -5099,8 +5099,8 @@ a.th {
     padding-top: 1.5em;
     padding-bottom: 2em;
     z-index: 1;
-    background-color: #ffffff;
-    box-shadow: inset 0em 0em #c9b08c, inset 0em 0em #c9b08c, inset 0em 3.5em #c9b08c, inset 0em -4em #c9b08c; }
+    background-color: #dacbb6;
+    box-shadow: inset 0em 0em #c9b08c, inset 0em 0em #c9b08c, inset 0em 2.2em #c9b08c, inset 0em -2.7em #c9b08c; }
   .videoball-container-stripe {
     width: 100%;
     padding-top: 1.5em;
@@ -5238,13 +5238,13 @@ a.th {
     color: white; } }
   @media only screen and (min-width: 25em) {
     .videoball-logo-container-stripe {
-      box-shadow: inset 0em 0em #c9b08c, inset 0em 0em #c9b08c, inset 0em 4.5em #c9b08c, inset 0em -5em #c9b08c; } }
+      box-shadow: inset 0em 0em #c9b08c, inset 0em 0em #c9b08c, inset 0em 2.5em #c9b08c, inset 0em -3em #c9b08c; } }
   @media only screen and (min-width: 48em) {
     .videoball-logo-container-stripe {
-      box-shadow: inset 0em 0em #c9b08c, inset 0em 0em #c9b08c, inset 0em 5em #c9b08c, inset 0em -5.5em #c9b08c; } }
+      box-shadow: inset 0em 0em #c9b08c, inset 0em 0em #c9b08c, inset 0em 3em #c9b08c, inset 0em -3.5em #c9b08c; } }
   @media only screen and (min-width: 67.5em) {
     .videoball-logo-container-stripe {
-      box-shadow: inset 0em 0em #c9b08c, inset 0em 0em #c9b08c, inset 0em 6em #c9b08c, inset 0em -6.5em #c9b08c; } }
+      box-shadow: inset 0em 0em #c9b08c, inset 0em 0em #c9b08c, inset 0em 3.5em #c9b08c, inset 0em -4.5em #c9b08c; } }
 
   @media only screen and (min-width: 48em) {
     .slide-in {
