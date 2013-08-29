@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Distribute your app as a gem
 # gemspec
 
+ruby '2.0.0'
+
 # Server requirements
 gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
