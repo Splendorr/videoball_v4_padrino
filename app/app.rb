@@ -5,6 +5,10 @@ module VideoballV4Padrino
     register Padrino::Mailer
     register Padrino::Helpers
 
+    configure :development do
+      require 'dm-sqlite-adapter'
+    end
+
     enable :sessions
 
     ## Database classes
@@ -20,7 +24,6 @@ module VideoballV4Padrino
       property :updated_at,     DateTime
 
     end
-
 
     configure :development do
       # Create or upgrade all tables at once, like magic
