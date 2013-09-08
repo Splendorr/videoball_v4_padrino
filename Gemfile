@@ -17,6 +17,7 @@ gem 'thin' # or mongrel
 gem 'rake'
 
 # Component requirements
+gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'sass'
 gem 'haml'
 # gem 'dm-sqlite-adapter'
