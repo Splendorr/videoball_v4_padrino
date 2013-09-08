@@ -7,9 +7,31 @@ module VideoballV4Padrino
 
     enable :sessions
 
+    ## Database classes
+
+    class BlogPost
+
+      include DataMapper::Resource
+
+      property :id,             Serial
+      property :title,          String
+      property :body,           Text
+      property :created_at,     DateTime
+      property :updated_at,     DateTime
+
+    end
+
+
+    configure :development do
+      # Create or upgrade all tables at once, like magic
+      DataMapper.auto_upgrade!
+    end
+
+    #Routes
     get :index do
        render 'index'
     end
+
 
     ###Padrino defaults, started out commented.
     ##
