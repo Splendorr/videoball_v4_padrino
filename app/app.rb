@@ -9,7 +9,7 @@ module VideoballV4Padrino
 
     ## Database classes
 
-    class BlogPost
+    class Post
 
       include DataMapper::Resource
 
