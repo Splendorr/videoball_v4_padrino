@@ -2,6 +2,6 @@
   .title= link_to post.title, url_for(:posts, :show, :id => post)
   .date= simple_format(post.created_at.strftime("%A, %B %e, %Y"))
   .time= simple_format(post.created_at.strftime("%H:%M:%S"))
+  .author Posted by #{post.account.name} #{post.account.surname}
   .body= simple_format(post.body)
-  .details
-    .author Posted by #{post.account.name} #{post.account.surname}
+    
