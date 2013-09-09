@@ -25,7 +25,7 @@ VideoballV4Padrino::App.controllers :posts do
   end
 
   get :show, :with => :id do
-    @post = Post.find_by_id(params[:id])
+    @post = Post.get(params[:id])
     render 'posts/show'
   end
 
