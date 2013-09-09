@@ -1,4 +1,5 @@
 .post
   .title= link_to post.title, url_for(:posts, :show, :id => post)
-  .date= time_ago_in_words(post.created_at || Time.now) + ' ago'
+  .date= simple_format(post.created_at.strftime("%A, %B %e, %Y"))
+  .time= simple_format(post.created_at.strftime("%H:%M:%S"))
   .body= simple_format(post.body)
